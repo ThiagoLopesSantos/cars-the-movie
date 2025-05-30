@@ -1,0 +1,9 @@
+@use 'variaveis';
+
+footer {
+    background: variaveis.$colorGray;
+    color: variaveis.$colorBlack;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}

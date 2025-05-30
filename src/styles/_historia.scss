@@ -1,0 +1,30 @@
+@use 'variaveis';
+
+.historia {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    &__content {
+        &__text {
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: justify;
+            line-height: 30px;
+            background-color: variaveis.$colorGray;
+            border: 2px solid variaveis.$colorBlack;
+            height: 70vh;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                height: auto;
+            }
+        }
+    }
+}
