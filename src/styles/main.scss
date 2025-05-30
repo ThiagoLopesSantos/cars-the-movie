@@ -1,0 +1,128 @@
+@use 'variaveis';
+@use 'miniMenu';
+@use 'hero';
+@use 'historia';
+@use 'personagens';
+@use 'curiosidades';
+@use 'trailer';
+@use 'footer';
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*Seções */
+section {
+    text-align: center;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: variaveis.$colorOrange;
+    color: variaveis.$colorWhite;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: variaveis.$colorOrangeHover;
+    }
+}
+
+/*TITLE H2*/
+.title_h2{
+    font-size: 40px;
+    background-color: variaveis.$colorRed;
+    border: 1px solid variaveis.$colorBlack;
+    padding: 5px;
+    color: variaveis.$colorYellow;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+}
+
+/* Corpo do site */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/mcquen_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.7; 
+    z-index: -1;
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+
+// padrão dos cards
+.card {
+    position: relative;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px variaveis.$colorBlackOpacity;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+
+    &:hover {
+        transform: scale(1.08);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.8);
+        transition: filter 0.3s ease-in-out;
+                    
+        @media (max-width: 768px) {
+            height: 180px;
+        }
+
+        &:hover {    
+            filter: brightness(1);
+        }
+    }
+
+    span {
+        position: absolute;
+        bottom: 0px;
+        left: 51%;
+        transform: translateX(-51%);
+        background: variaveis.$colorBlackOpacity;
+        color: variaveis.$colorWhite;
+        padding: 6px 12px;
+        border-radius: 0px 0px 8px 8px;
+        font-size: 14px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            font-size: 12px;
+            width: 105%;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@use 'variaveis';
+
+.personagens {
+    &__content {
+        &__card-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+
+            .personagens-card{
+                height: 228px; 
+                transition: height 0.5s ease;
+                
+                &.expandido {
+                    height: 100%;
+                }
+
+                &__img {
+                    object-fit: contain;    
+                    object-position: center;
+                    max-height: 150px;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                &__title {
+                    margin-top: 10px;
+                    font-size: 18px;
+                    color: variaveis.$colorYellow;
+                    background-color: variaveis.$colorRed;
+                    border: 2px solid variaveis.$colorBlack;
+                    padding: 5px;
+
+                    @media (max-width: 768px) {    
+                        font-size: 16px;
+                    }
+                }
+
+                &__text {
+                    padding: 10px 10px;
+                    color: variaveis.$colorYellow;
+                    background-color: variaveis.$colorBlackOpacity;
+                    font-size: 16px;
+                    font-style: italic;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 22px;
+
+                    @media (max-width: 768px) {    
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+
+                &__ver-mais {
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
+    }
+}

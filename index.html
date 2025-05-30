@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carros - O Filme</title>
+  <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="icon" type="image/png" href="src/images/logo.ico">
+
+</head>
+<body>
+
+  <!-- Mini Menu Fixo -->
+  <nav id="miniMenu" class="mini-menu hidden">
+    <button id="hamburgerBtn" class="mini-menu__button hamburger">
+      &#9776;
+    </button>
+    <ul id="miniMenuList" class="mini-menu__list menu-list">
+      <li class="mini-menu__list__item"><a class="list--style" href="#inicio">Início</a></li>
+      <li class="mini-menu__list__item"><a class="list--style" href="#historia_title">História</a></li>
+      <li class="mini-menu__list__item"><a class="list--style" href="#personagens_title">Personagens</a></li>
+      <li class="mini-menu__list__item"><a class="list--style" href="#curiosidades_title">Curiosidades</a></li>
+      <li class="mini-menu__list__item"><a class="list--style" href="#trailer_area">Onde Assistir</a></li>
+    </ul>
+  </nav>
+
+  <!--Seção de HOME PAGE -->
+  <section id="inicio" class="hero">
+    <div class="hero__content content">
+      <img  class="hero__content__img" src="./dist/images/carro_logo.png" style="width: 300px;">
+      <!-- menu de cards -->
+      <div class="hero__content__menu-cards menu_cards">
+        <a href="#historia_title" class="card">
+          <img src="./dist/images/historia_img.jpg" alt="História">
+          <span>História</span>
+        </a>
+        <a href="#personagens_title" class="card">
+          <img src="./dist/images/personagens_img.jpg" alt="Personagens">
+          <span>Personagens</span>
+        </a>
+        <a href="#curiosidades_title" class="card">
+          <img src="./dist/images/RadiatorSprings.jpg" alt="Curiosidades">
+          <span>Curiosidades</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção História -->
+  <section class="historia">
+    <div class="historia__content content">
+      <h2 id="historia_title" class="title_h2">A História</h2>
+      <div class="historia__content__text historia_text">
+        <p>
+          Relâmpago McQueen é um carro de corrida ambicioso que sonha em vencer a Copa Pistão e se tornar um grande campeão. No caminho para a corrida decisiva na Califórnia, ele acidentalmente se perde e acaba na pacata cidade de Radiator Springs, na Rota 66.
+          Lá, McQueen danifica a estrada e é forçado a consertá-la como punição. No começo, ele só pensa em sair o mais rápido possível, mas, aos poucos, ele cria laços com os moradores, como Mate, um guincho divertido, e Sally, uma charmosa Porsche. Com a ajuda de Doc Hudson, um ex-campeão de corridas, McQueen aprende sobre humildade, amizade e o verdadeiro significado de ser um vencedor.        
+          Quando finalmente chega à grande corrida, ele faz algo inesperado: desiste da vitória para ajudar um rival em apuros, mostrando que aprendeu uma lição valiosa. No final, McQueen retorna a Radiator Springs, agora um carro mais maduro e com novos amigos para a vida toda.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Personagens -->
+  <section class="personagens">
+    <div class="personagens__content content">
+      <h2 id="personagens_title" class="title_h2">Personagens</h2>
+
+      <div class="personagens__content__card-list">
+        <div class="personagens-card card">
+          <img class="personagens-card__img" src="./dist/images/mcqueen.png" alt="Relâmpago McQueen">
+          <h3 class="personagens-card__title">Relâmpago McQueen</h3>
+          <button class="personagens-card__ver-mais btn">Ver mais</button>
+          <p class="personagens-card__text">Um carro de corrida ousado e veloz, estrela da Copa Pistão. Começou arrogante, mas aprendeu o valor da amizade e da humildade.</p>  
+        </div>
+        <div class="personagens-card card">
+          <img class="personagens-card__img" src="./dist/images/matte.png" alt="Relâmpago McQueen">
+          <h3 class="personagens-card__title">Mate</h3>
+          <button class="personagens-card__ver-mais btn">Ver mais</button>
+          <p class="personagens-card__text">Um guincho enferrujado e super gente boa. Melhor amigo do McQueen, vive arrancando risadas com seu jeitão caipira e coração gigante.</p>  
+        </div>
+        <div class="personagens-card card">
+          <img class="personagens-card__img" src="./dist/images/sally.png" alt="Relâmpago McQueen">
+          <h3 class="personagens-card__title">Sally</h3>
+          <button class="personagens-card__ver-mais btn">Ver mais</button>
+          <p class="personagens-card__text">Uma Porsche elegante e ex-advogada da cidade grande. Mora em Radiator Springs e tem um carinho especial por McQueen. Inteligente e sonhadora.</p>  
+        </div>
+        <div class="personagens-card card">
+          <img class="personagens-card__img" src="./dist/images/hudson_hornet.png" alt="Relâmpago McQueen">
+          <h3 class="personagens-card__title">Doc Hudson</h3>
+          <button class="personagens-card__ver-mais btn">Ver mais</button>
+          <p class="personagens-card__text">O lendário "Fabuloso Hudson Hornet". Já foi campeão, mas hoje é o médico e juiz de Radiator Springs. Sábio, reservado e cheio de histórias.</p>  
+        </div>
+        <div class="personagens-card card">
+          <img class="personagens-card__img" src="./dist/images/mac.png" alt="Relâmpago McQueen">
+          <h3 class="personagens-card__title">Mack</h3>
+          <button class="personagens-card__ver-mais btn">Ver mais</button>
+          <p class="personagens-card__text">O caminhão leal que transporta McQueen para as corridas. Dorminhoco, mas sempre pronto pra ajudar seu amigo nos momentos mais importantes.</p>  
+        </div>
+        <div class="personagens-card card">
+          <img class="personagens-card__img" src="./dist/images/richard.png" alt="Relâmpago McQueen">
+          <h3 class="personagens-card__title">Richard (“The King”)</h3>
+          <button class="personagens-card__ver-mais btn">Ver mais</button>
+          <p class="personagens-card__text">Veterano das pistas e lenda da Copa Pistão. Respeitado por todos, representa a velha guarda do automobilismo com humildade e espírito esportivo.</p>  
+        </div>
+        <div class="personagens-card card">
+          <img class="personagens-card__img" src="./dist/images/chicriquis.png" alt="Relâmpago McQueen">
+          <h3 class="personagens-card__title">Chick Hicks</h3>
+          <button class="personagens-card__ver-mais btn">Ver mais</button>
+          <p class="personagens-card__text">O rival arrogante e trapaceiro de McQueen. Faz de tudo pra vencer, mesmo que tenha que jogar sujo. Um vilão clássico das corridas.</p>  
+        </div>              
+      </div>
+    </div>
+  </section>
+
+  <!--Seção Curiosidades -->
+  <section class="curiosidades">
+    <div class="curiosidades__content content">
+      <h2 id="curiosidades_title" class="title_h2">Curiosidades</h2>
+      <div class="curiosidades__list">
+        <div class="curiosidades__list__item">
+          <img class="item_img" src="./dist/images/RadiatorSprings.jpg" alt="Radiator Springs">
+          <h3 class="item_title">Radiator Springs</h3>
+          <p class="item_description">
+              Antiga glória da Rota 66, Radiator Springs é a cidade onde o tempo tirou férias e esqueceu de voltar. Lá, todo mundo se conhece, inclusive os cones do Cone Motel.
+              Com direito a corrida de tratores (ops... sem fazer barulho, por favor), mecânica feita com sabedoria pelo Doc Hudson e cafés servidos com muito óleo pela Flo, é o tipo de lugar onde você vai trocar o óleo... 
+              e ganhar um conselho de vida no processo. Tem até um museu! Só não 
+              repara se ele estiver mais vazio que tanque em fim de mês.
+          </p>
+        </div>
+        <div class="curiosidades__list__item">
+          <img class="item_img" src="./dist/images/Stanley.webp" alt="Stanley">
+          <h3 class="item_title">Stanley</h3>
+          <p class="item_description">
+              Stanley, o lendário fundador de Radiator Springs, foi o tipo de carro que vendia radiadores e boas ideias na mesma velocidade! Visionário, 
+              carismático e com um farol sempre apontado para o futuro, Stanley decidiu montar sua loja bem onde seu radiador quebrou — o verdadeiro "se a vida te dá limões, abra uma oficina". 
+              Em sua homenagem, a cidade ergueu uma estátua que fica bem no centro da praça, observando tudo com aquele ar de "na minha época era melhor". Dizem que tocar na estátua dá sorte… 
+              ou pelo menos uma desculpa pra tirar selfie. Só não vale dar ré nela, hein. Respeita o patriarca!
+          </p>
+        </div>
+        <div class="curiosidades__list__item">
+          <img class="item_img" src="./dist/images/rusteze.png" alt="Rust-eze">
+          <h3 class="item_title">Rust-eze</h3>
+          <p class="item_description">
+              A famosa patrocinadora do nosso campeão relâmpago McQueen — ou como eles gostam de dizer: "Para carros com ferrugem, mas com autoestima alta!" 
+              Fundada pelos hilários irmãos Rusty e Dusty, a Rust-eze acredita que até o carro mais enferrujado merece brilhar... de longe, pelo menos. 
+              Seus produtos prometem deixar a ferrugem mais comportada — tipo passar um gel no cabelo e fingir que tá tudo certo. É a empresa que provou que, 
+              com carisma e muito óleo lubrificante, até a lataria mais judiada pode ter seu momento de fama!
+          </p>
+        </div>
+        <div class="curiosidades__list__item">
+          <img class="item_img" src="./dist/images/dinoco.png" alt="Dinoco">
+          <h3 class="item_title">Dinoco</h3>
+          <p class="item_description">
+              A lendária patrocinadora que todo carro sonha — ou sonhava, até o McQueen roubar a cena. A Dinoco é tipo aquela grife de luxo do mundo automobilístico: 
+              tem combustível premium, autódromo com vista e até helicóptero particular pra buscar piloto! Fundada na era dos dinossauros (ou quase isso), 
+              ela já patrocinou os maiores campeões... e também o Cal Weathers, que vive tentando manter a pose com aquele azul metálico estiloso. 
+              Se você acha que patrocinar é só estampar adesivo, é porque nunca viu o mascote da Dinoco — um dinossauro mais famoso que muito carro de corrida. 
+              Só não espere que eles patrocinem quem tem ferrugem, viu? Aqui o negócio é brilho, elegância e selfie com o dino no final!
+          </p>
+        </div>
+        <div class="curiosidades__list__item">
+          <img class="item_img" src="./dist/images/htb.png" alt="HTB">
+          <h3 class="item_title">Hostile Takeover Bank (HTB)</h3>
+          <p class="item_description">
+              Se a Rust-eze é carisma e a Dinoco é glamour, a HTB é... caos com capital! Patrocinadora do infame Chick Hicks, o carro mais boca grande (e roda leve) das pistas, 
+              o Hostile Takeover Bank já diz no nome: eles chegam pra tomar o controle — seja de empresas, corridas ou entrevistas que não eram pra eles. Com um logo que parece 
+              gritar "confia não", a HTB apoia quem acredita que vencer é mais importante do que como vencer. Dizem que o único critério pra ser patrocinado pela HTB é ter um ego 
+              maior que o próprio motor. E olha... o Chick passou com louvor. Afinal, quem precisa de fair play quando se tem um capô cheio de adesivos e uma autoestima inabalável?
+          </p>
+        </div>
+        <div class="curiosidades__list__item">
+          <img class="item_img" src="./dist/images/copapistao.png" alt="Copa Pistão">
+          <h3 class="item_title">Copa Pistão</h3>
+          <p class="item_description">
+              A Copa Pistão é o ápice da velocidade, o Super Bowl dos motores e o lugar onde pneus gritam por socorro! É lá que os maiores corredores se enfrentam numa mistura de adrenalina,
+              borracha queimada e muito merchandising. Com arquibancadas lotadas de fãs (e moscas, dependendo da etapa), o evento é patrocinado por mais marcas do que carro em posto de lavagem. 
+              Se você nunca assistiu a uma corrida da Copa Pistão, é como ver um monte de carros brigando pelo primeiro lugar com a elegância de um semáforo quebrado. E, claro, sempre tem aquele 
+              comentarista que fala mais do que motor em pane. Emoção garantida ou seu óleo de volta!
+          </p>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+  <!--Seção do Trailer -->
+  <section id="trailer_area" class="trailer">
+    <div class="trailer__video">    
+      <iframe class="trailer__video__item" src="https://www.youtube.com/embed/0I1x9ew1OZU?autoplay=1&mute=1&loop=1&playlist=0I1x9ew1OZU&vq=hd1080"  frameborder="0" allow="autoplay; fullscreen"></iframe>
+    </div>
+    <div class="overlay"><!--Camada para suavizar o background--></div>
+    <div class="trailer__content content">
+      <h1>Onde Assistir</h1>
+      <p>O filme está disponível no Disney+. Clique no link abaixo para assistir.</p>
+      <a href="https://www.disneyplus.com/pt-br/browse/entity-9c1b0ec2-2e4e-4717-89fb-bdf3a45523df" target="_blank" class="btn">Assistir no Disney+</a>
+    </div>  
+  </section>
+
+  <!--Rodapé -->
+  <footer>
+    <p>&copy; 2025 - Carros - Fan Land Page by: Thiago Lopes Santos - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="src/scripts/script.js"></script>
+</body>
+</html>
+
+
+
